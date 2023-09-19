@@ -1,0 +1,58 @@
+### List all messages
+
+
+
+GET http://localhost:3000/book
+
+
+### Creating  messages
+ 
+
+POST http://localhost:3000/book
+Content-Type: application/json 
+
+{
+    "title": "Harry Potter and the Sorcerer's Stone",
+    "description": "The first book in the beloved Harry Potter series.",
+    "author": "J.K. Rowling",
+    "price": "1499",
+    "category": "Fantasy"
+}
+
+
+### \updating  messages
+
+
+ PUT  http://localhost:3000/book/650936e404a6e1be244e8052
+ Content-Type: application/json 
+
+
+{
+    "title": "Harry Potter",
+    "description": "The first book in the beloved Harry Potter series.",
+    "author": "J.K. Rowling",
+    "price": "1499",
+    "category": "Fantasy"
+    
+}
+
+
+
+
+
+
+
+###get a particular id
+
+GET http://localhost:3000/book/650936e404a6e1be244e8052
+
+
+
+
+### deleting messages
+
+
+ DELETE   http://localhost:3000/book/650936e404a6e1be244e8052
+
+
+
